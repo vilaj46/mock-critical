@@ -1,0 +1,52 @@
+header {
+  margin: 15px 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header i {
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+header i:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  header h1 {
+    margin: 0 auto;
+  }
+
+  header i {
+    border: 3px solid red;
+    display: none !important;
+  }
+
+  .hidden {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 700;
+  }
+
+  .hidden:hover {
+    color: lightgray;
+  }
+}
