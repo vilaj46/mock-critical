@@ -69,7 +69,6 @@
 #image-clicker {
   display: flex;
   justify-content: flex-end;
-  width: 10%;
 }
 
 .active {
