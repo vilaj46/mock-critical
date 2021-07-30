@@ -12,10 +12,8 @@ import Footer from "./Footer";
 
 import "./App.css";
 
-const accessKey =
-  "2680911758c0821683fbbc2d33244366a9dda6b318a4ce20ba1481948455cf82";
-const secretKey =
-  "5fc3dc044aa270f23e15d46ae2fbb60142eebf7f052cec78a0c32d807032aeac";
+const accessKey = "";
+const secretKey = "";
 
 const App = () => {
   const [images, setImages] = useImages();
