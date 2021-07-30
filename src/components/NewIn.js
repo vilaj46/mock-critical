@@ -24,26 +24,24 @@ const NewIn = () => {
     "Break On Through Tote - Phantom",
   ];
 
-  // Jumbled CZ Wetsuit Steamer - Phantom
-
   const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
 
   return (
     <section id="new-in">
-      <a href="/#">
+      <button>
         <h3>New in</h3>
-      </a>
+      </button>
       <ul id="new-in-list">
         {images.map((img) => (
           <li key={img}>
-            <a href="/#">
+            <button>
               <img src={img} alt="Clothing" className="new-img" />
               <div className="sizes">
                 <p>Available Sizes</p>
                 <p>S M L XL</p>
               </div>
               <p className="clothing">{descriptions[getRandomInt(8)]}</p>
-            </a>
+            </button>
           </li>
         ))}
       </ul>

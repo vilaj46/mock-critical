@@ -1,8 +1,14 @@
-#blog-news > a {
+#blog-news > button {
   display: inline-block;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   margin-bottom: 50px;
+  outline: none;
+  border: none;
+}
+
+#blog-news > button {
+  cursor: pointer;
 }
 
 #blog-news-list {
@@ -19,6 +25,7 @@
   margin-bottom: 25px;
   overflow: hidden;
   text-align: center;
+  cursor: pointer;
 }
 
 .blog-title {

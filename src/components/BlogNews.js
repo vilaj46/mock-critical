@@ -19,50 +19,44 @@ const BlogNews = () => {
     "Crate Diggers ~ Critical Slide & Surfstitch",
   ];
 
-  const randomTitle = (max) =>
-    titles[Math.floor(Math.random() * Math.floor(max))];
+  // let used = [];
+
+  // const randomTitle = (max) => {
+  //   const randomed = titles[Math.floor(Math.random() * Math.floor(max))];
+  //   used.push(randomed);
+
+  //   return randomed;
+  // };
 
   return (
     <section id="blog-news">
-      <a href="/#">
+      <button type="text">
         <h3>Blog News</h3>
-      </a>
+      </button>
       <ul id="blog-news-list">
         <li>
-          <a href="/#">
-            <img src={blog1} alt="Blog Img" className="blog-img" />
-            <p className="blog-title">{randomTitle(6)}</p>
-          </a>
+          <img src={blog1} alt="Blog Img" className="blog-img" />
+          <p className="blog-title">{titles[0]}</p>
         </li>
         <li>
-          <a href="/#">
-            <img src={blog2} alt="Blog Img" className="blog-img" />
-            <p className="blog-title">{randomTitle(6)}</p>
-          </a>
+          <img src={blog2} alt="Blog Img" className="blog-img" />
+          <p className="blog-title">{titles[1]}</p>
         </li>
         <li>
-          <a href="/#">
-            <img src={blog3} alt="Blog Img" className="blog-img" />
-            <p className="blog-title">{randomTitle(6)}</p>
-          </a>
+          <img src={blog3} alt="Blog Img" className="blog-img" />
+          <p className="blog-title">{titles[2]}</p>
         </li>
         <li>
-          <a href="/#">
-            <img src={blog4} alt="Blog Img" className="blog-img" />
-            <p className="blog-title">{randomTitle(6)}</p>
-          </a>
+          <img src={blog4} alt="Blog Img" className="blog-img" />
+          <p className="blog-title">{titles[3]}</p>
         </li>
         <li>
-          <a href="/#">
-            <img src={blog5} alt="Blog Img" className="blog-img" />
-            <p className="blog-title">{randomTitle(6)}</p>
-          </a>
+          <img src={blog5} alt="Blog Img" className="blog-img" />
+          <p className="blog-title">{titles[4]}</p>
         </li>
         <li>
-          <a href="/#">
-            <img src={blog6} alt="Blog Img" className="blog-img" />
-            <p className="blog-title">{randomTitle(6)}</p>
-          </a>
+          <img src={blog6} alt="Blog Img" className="blog-img" />
+          <p className="blog-title">{titles[5]}</p>
         </li>
       </ul>
     </section>

@@ -2,10 +2,19 @@
   margin-bottom: 100px;
 }
 
-#new-in > a {
+#new-in > button {
   display: inline-block;
   letter-spacing: 0.2rem;
   margin: 50px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#new-in-list button {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 #new-in-list li p {

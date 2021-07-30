@@ -32,6 +32,8 @@ header i:hover {
 @media screen and (min-width: 960px) {
   header h1 {
     margin: 0 auto;
+    border: none;
+    outline: none;
   }
 
   header i {
@@ -44,6 +46,9 @@ header i:hover {
     text-transform: uppercase;
     color: #333;
     font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
   }
 
   .hidden:hover {

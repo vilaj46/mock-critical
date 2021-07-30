@@ -1,44 +1,40 @@
-import React from 'react';
+import React from "react";
 
-import './Footer.css';
+import "./Footer.css";
 
-const Footer = () => (
-  <footer>
-    <div id="footer-links">
-      <div>
-        <a href="/">Delivery & Returns</a>
-        <a href="/">Privacy Policy</a>
+const Footer = () => {
+  const onSubmit = (e) => {
+    e.preventDefault();
+    return;
+  };
+  return (
+    <footer>
+      <div id="footer-links">
+        <div>
+          <button>Delivery & Returns</button>
+          <button>Privacy Policy</button>
+        </div>
+        <div id="special-links">
+          <button className="special-links">Login</button>
+          <button className="special-links">Join</button>
+        </div>
       </div>
-      <a href="/" className="special-links">
-        Login
-      </a>
-      <a href="/" className="special-links">
-        Join
-      </a>
-    </div>
-    <div id="social-links">
-      <a href="/">
+      <div id="social-links">
         <i className="fab fa-instagram" />
-      </a>
-      <a href="/">
         <i className="fab fa-facebook-f" />
-      </a>
-      <a href="/">
         <i className="fab fa-pinterest-p" />
-      </a>
-      <a href="/">
         <i className="fab fa-vimeo-v" />
-      </a>
-    </div>
-    <div>
-      <p>Subscribe for TCSS News</p>
-      <form>
-        <input type="text" placeholder="Email address" required />
-        <button type="submit">Join</button>
-      </form>
-    </div>
-    <div>© 2019 The Mock Slide :: Site Credit</div>
-  </footer>
-);
+      </div>
+      <div>
+        <p>Subscribe for TCSS News</p>
+        <form onSubmit={onSubmit}>
+          <input type="text" placeholder="Email address" required />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+      <div>© 2019 The Mock Slide :: Site Credit</div>
+    </footer>
+  );
+};
 
 export default Footer;

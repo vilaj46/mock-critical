@@ -19,6 +19,13 @@ footer {
   margin-bottom: 25px;
 }
 
+#footer-links button {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 .special-links {
   margin: 0 auto;
 }
@@ -34,6 +41,7 @@ footer {
 
 footer i {
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 footer form {
@@ -89,6 +97,25 @@ footer div:last-child {
 
   #footer-links a:nth-child(-n + 2) {
     margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #footer-links {
+    justify-content: space-between;
+  }
+
+  #special-links {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 30%;
+  }
+
+  #footer-links div:first-child {
+    width: 60%;
   }
 }
 
