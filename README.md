@@ -17,8 +17,8 @@ This homepage was created to use multiple techniques/technologies.
   - Hooks
 - Testing
   - Unit Testing
-  - React hook testing
+  - React hook Testing
+  - Integration Testing
 - Styling
   - Flexbox
   - Slideshow
-- Environment Variables
